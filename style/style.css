@@ -1,16 +1,15 @@
-@font-face {
-  font-family: "CanterBoldCustom";
-  src: local("CanterBoldCustom"), url(../fonts/canter-bold.ttf); }
 body {
-  background: url(../img/cooper_1.jpg); }
+  display: flex;
+  align-items: center;
+  background: url(../img/cooper_1.jpg);
+  color: #f3efe3; }
 
 .content {
-  display: flex;
-  max-width: 1170px;
+  width: 1170px;
   height: 2000px;
   border: 3px solid #696969;
   margin: 0 auto;
-  margin-top: 212px;
+  margin-top: 100px;
   background: url(../img/cooperr.png) no-repeat; }
 
 .main-text-box {
@@ -20,17 +19,46 @@ body {
   margin-top: 246px;
   margin-left: 599px;
   width: 515px;
-  height: 258px;
-  border: 3px solid #696969; }
+  height: 258px; }
   .main-text-box p {
-    font-family: CanterBoldCustom;
-    color: #f3efe3;
-    font-size: 64px;
     text-transform: uppercase; }
+  .main-text-box .elem1 {
+    font-size: 85px;
+    margin-top: -21px;
+    letter-spacing: 1px; }
   .main-text-box .elem2 {
-    font-size: 80px; }
+    font-size: 175px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -36px; }
   .main-text-box .elem3 {
-    margin-top: 8px;
-    font-size: 60px; }
+    margin-top: -17px;
+    font-size: 76px;
+    letter-spacing: 1px; }
+
+.timer-container {
+  margin-top: 74px;
+  margin-left: 662px;
+  display: flex; }
+  .timer-container .days, .timer-container .hours, .timer-container .minutes, .timer-container .seconds {
+    text-align: center;
+    margin: 10px; }
+    .timer-container .days h1, .timer-container .hours h1, .timer-container .minutes h1, .timer-container .seconds h1 {
+      display: inline-block;
+      font-size: 50px;
+      margin: 0 auto;
+      margin-top: -6px; }
+  .timer-container .days .bg {
+    display: flex; }
+    .timer-container .days .bg .bg-item {
+      margin: 2px;
+      text-align: center;
+      width: 47px;
+      height: 83px;
+      background: url("../img/time.png"); }
+      .timer-container .days .bg .bg-item p {
+        margin-top: 1px;
+        display: inline-block;
+        font-size: 69px; }
 
 /*# sourceMappingURL=style.css.map */

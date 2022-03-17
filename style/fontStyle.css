@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'CanterBold';
+    src:url('../fonts/CanterBold.ttf.woff') format('woff'),
+        url('../fonts/CanterBold.ttf.svg#CanterBold') format('svg'),
+        url('../fonts/CanterBold.ttf.eot'),
+        url('../fonts/CanterBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+    font-family: 'CanterBold';
+ }  
+
+.elem1 {
+    font-family: 'CanterBold';
+}
+
+.elem2 {
+    font-family: 'CanterBold';
+}
+
+.elem3 {
+    font-family: 'CanterBold';
+}
