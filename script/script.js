@@ -1,4 +1,4 @@
-let date = new Date('april 18 2022 00:00:00');
+let date = new Date('may 1 2022 00:00:00');
 let globalVarForDays;
 let globalVarForHours;
 let globalVarForMinutes;
@@ -29,17 +29,34 @@ function counts() {
     let arrayMinutes = minutes.toString(10).split('').map(int => parseInt(int, 10));
     let arraySeconds = seconds.toString(10).split('').map(int => parseInt(int, 10));
 
-    
+    if (typeof arrayHours[1] == 'undefined') {
+        document.getElementById('h1').innerText = '0';
+        document.getElementById('h2').innerText = arrayHours[0];
+    } else {
+        document.getElementById('h1').innerText = arrayHours[0];
+        document.getElementById('h2').innerText = arrayHours[1];
+    };
 
-    document.getElementById('d1').innerText = arrayDays[0];
-    document.getElementById('d2').innerText = arrayDays[1];
-    document.getElementById('h1').innerText = arrayHours[0];
-    document.getElementById('h2').innerText = arrayHours[1];
-    document.getElementById('m1').innerText = arrayMinutes[0];
-    document.getElementById('m2').innerText = arrayMinutes[1];
+    if (typeof arrayDays[1] == 'undefined') {
+        document.getElementById('d1').innerText = '0';
+        document.getElementById('d2').innerText = arrayDays[0];
+    } else {
+        document.getElementById('d1').innerText = arrayDays[0];
+        document.getElementById('d2').innerText = arrayDays[1];
+    };
 
-    console.log(hours);
-    console.log(arrayHours);
+    if (typeof arrayMinutes[1] == 'undefined') {
+        document.getElementById('m1').innerText = '0';
+        document.getElementById('m2').innerText = arrayMinutes[0];
+    } else {
+        document.getElementById('m1').innerText = arrayMinutes[0];
+        document.getElementById('m2').innerText = arrayMinutes[1];
+    };
+
+
+    // console.log(hours);
+    // console.log(arrayHours[0]);
+    // console.log(arrayHours[1]);
     // console.log(minutes);
     // console.log(arrayMinutes);
 }
