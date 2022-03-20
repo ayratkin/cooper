@@ -11,78 +11,72 @@
 </head>
 <body>
     <div class="content">
-        <div class="main-text-box">
-            <p class="elem1" id="elem1">
+
+        <!-- Надпись в топе сайта -->
+        <div class="main-text">
+            <p class="main-text__row1" id="elem1">
                 Feel the excitement 
             </p>
 
-            <p class="elem2" >
+            <p class="main-text__row2" >
                 Get Ready
             </p>
 
-            <p class="elem3" >
+            <p class="main-text__row3" >
                 We are comming soon
             </p>
         </div>
 
-        <div class="timer-container">
+        <!-- Таймер -->
+        <div class="timer">
+            <!-- Дни -->
+            <div class="timer-column">
 
-            <div class="days">
-
-                <div class="bg">
-                    <div class="bg-item">
+                <div class="timer-column__numbers">
+                    <div class="timer-column__number-box">
                         <p id="d1"></p>
                     </div>
 
-                    <div class="bg-item">
+                    <div class="timer-column__number-box">
                         <p id="d2"></p>
                     </div>
 
                 </div>
-                <h1>days</h1>
+                <h1 class="timer-column__title" >days</h1>
             </div>
 
-            
-            <div class="days">
+            <!-- Часы -->
+            <div class="timer-column">
 
-                <div class="bg">
-                    <div class="bg-item">
+                <div class="timer-column__numbers">
+                    <div class="timer-column__number-box">
                         <p id="h1"></p>
                     </div>
 
-                    <div class="bg-item">
-                        <p id="h2" ></p>
+                    <div class="timer-column__number-box">
+                        <p id="h2"></p>
                     </div>
-                    
+
                 </div>
-                <h1>hours</h1>
+                <h1 class="timer-column__title" >hours</h1>
             </div>
 
-            
-            <div class="days">
+            <!-- Минуты -->
+            <div class="timer-column">
 
-                <div class="bg">
-                    <div class="bg-item">
-                        <p id="m1" ></p>
+                <div class="timer-column__numbers">
+                    <div class="timer-column__number-box">
+                        <p id="m1"></p>
                     </div>
 
-                    <div class="bg-item">
-                        <p id="m2" ></p>
+                    <div class="timer-column__number-box">
+                        <p id="m2"></p>
                     </div>
-                    
+
                 </div>
-                <h1>min</h1>
+                <h1 class="timer-column__title" >min</h1>
             </div>
-
         </div>
-
-        <div class="timer" id="timer" >
-            <span id="d" ></span>
-            <span id="h" ></span>
-            <span id="m" ></span>
-            <span id="s" ></span>
-        </div> 
-
     </div>
 
     <script src="script/script.js"></script>
