@@ -13,7 +13,9 @@ body
     margin-top: 100px
     background: url(../img/cooperr.png) no-repeat
 
-.main-text-box
+
+// Стили основного текста (3 строки)
+.main-text
     display: flex
     flex-direction: column
     align-items: center
@@ -25,49 +27,48 @@ body
     p
         text-transform: uppercase
 
-    .elem1
-        font-size: 85px
-        margin-top: -21px
-        letter-spacing: 1px
+    
+.main-text__row1
+    font-size: 85px
+    margin-top: -21px
+    letter-spacing: 1px
 
-    .elem2
-        font-size: 175px
-        text-transform: uppercase
-        letter-spacing: 1px
-        margin-top: -36px
+.main-text__row2
+    font-size: 175px
+    letter-spacing: 1px
+    margin-top: -36px
 
+.main-text__row3
+    margin-top: -17px
+    font-size: 76px
+    letter-spacing: 1px
 
-    .elem3
-        margin-top: -17px
-        font-size: 76px
-        letter-spacing: 1px
-
-.timer-container 
+.timer
     margin-top: 74px
     margin-left: 662px
     display: flex
     
-    .days, .hours, .minutes, .seconds
-        text-align: center
-        margin: 10px
+.timer-column
+    text-align: center
+    margin: 10px
 
-        h1
-            display: inline-block
-            font-size: 50px
-            margin: 0 auto
-            margin-top: -6px 
+    h1
+        display: inline-block
+        font-size: 50px
+        margin: 0 auto
+        margin-top: -6px 
 
-    .days .bg
-            display: flex
+.timer-column__numbers
+    display: flex
 
-            .bg-item
-                margin: 2px
-                text-align: center
-                width: 47px
-                height: 83px
-                background: url('../img/time.png')
+.timer-column__number-box
+    margin: 2px
+    text-align: center
+    width: 47px
+    height: 83px
+    background: url('../img/time.png')
 
-                p 
-                    margin-top: 1px
-                    display: inline-block
-                    font-size: 69px
+    p
+        margin-top: 1px
+        display: inline-block
+        font-size: 69px

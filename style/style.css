@@ -12,7 +12,7 @@ body {
   margin-top: 100px;
   background: url(../img/cooperr.png) no-repeat; }
 
-.main-text-box {
+.main-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,45 +20,50 @@ body {
   margin-left: 599px;
   width: 515px;
   height: 258px; }
-  .main-text-box p {
+  .main-text p {
     text-transform: uppercase; }
-  .main-text-box .elem1 {
-    font-size: 85px;
-    margin-top: -21px;
-    letter-spacing: 1px; }
-  .main-text-box .elem2 {
-    font-size: 175px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: -36px; }
-  .main-text-box .elem3 {
-    margin-top: -17px;
-    font-size: 76px;
-    letter-spacing: 1px; }
 
-.timer-container {
+.main-text__row1 {
+  font-size: 85px;
+  margin-top: -21px;
+  letter-spacing: 1px; }
+
+.main-text__row2 {
+  font-size: 175px;
+  letter-spacing: 1px;
+  margin-top: -36px; }
+
+.main-text__row3 {
+  margin-top: -17px;
+  font-size: 76px;
+  letter-spacing: 1px; }
+
+.timer {
   margin-top: 74px;
   margin-left: 662px;
   display: flex; }
-  .timer-container .days, .timer-container .hours, .timer-container .minutes, .timer-container .seconds {
-    text-align: center;
-    margin: 10px; }
-    .timer-container .days h1, .timer-container .hours h1, .timer-container .minutes h1, .timer-container .seconds h1 {
-      display: inline-block;
-      font-size: 50px;
-      margin: 0 auto;
-      margin-top: -6px; }
-  .timer-container .days .bg {
-    display: flex; }
-    .timer-container .days .bg .bg-item {
-      margin: 2px;
-      text-align: center;
-      width: 47px;
-      height: 83px;
-      background: url("../img/time.png"); }
-      .timer-container .days .bg .bg-item p {
-        margin-top: 1px;
-        display: inline-block;
-        font-size: 69px; }
+
+.timer-column {
+  text-align: center;
+  margin: 10px; }
+  .timer-column h1 {
+    display: inline-block;
+    font-size: 50px;
+    margin: 0 auto;
+    margin-top: -6px; }
+
+.timer-column__numbers {
+  display: flex; }
+
+.timer-column__number-box {
+  margin: 2px;
+  text-align: center;
+  width: 47px;
+  height: 83px;
+  background: url("../img/time.png"); }
+  .timer-column__number-box p {
+    margin-top: 1px;
+    display: inline-block;
+    font-size: 69px; }
 
 /*# sourceMappingURL=style.css.map */
