@@ -7,7 +7,7 @@ body {
 .content {
   min-width: 1167px;
   box-sizing: border-box;
-  height: 2000px;
+  height: 1700px;
   margin: 0 auto;
   margin-top: 100px;
   background: url(../img/cooperr.png) no-repeat;
@@ -127,19 +127,35 @@ body {
   position: relative;
   flex-wrap: wrap; }
 
+.contact-form__input-name,
+.contact-form__input-email,
+.contact-form__input-message {
+  font-size: 14px;
+  font-family: "Georgia";
+  color: #a9a49e;
+  font-style: italic;
+  border: none;
+  position: absolute; }
+
 .contact-form__input-name {
-  position: absolute;
   margin-left: 30px;
   margin-top: 53px; }
 
 .contact-form__input-email {
-  position: absolute;
   margin-left: 240px;
   margin-top: 53px; }
 
 .contact-form__input-message {
-  position: absolute;
   margin-left: 30px;
-  margin-top: 159px; }
+  margin-top: 96px; }
+
+.contact-form__submit-btn {
+  margin-left: 180px;
+  margin-top: 179px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  background: transparent;
+  color: #515253; }
 
 /*# sourceMappingURL=style.css.map */
