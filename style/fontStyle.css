@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'CanterBold';
     src:url('../fonts/CanterBold.ttf.woff') format('woff'),
         url('../fonts/CanterBold.ttf.svg#CanterBold') format('svg'),
@@ -6,6 +6,11 @@
         url('../fonts/CanterBold.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome.ttf');
 }
 
 body { 
@@ -27,3 +32,11 @@ body {
 .contact-form__submit-btn {
     font-family: 'CanterBold';
 }
+
+.address__icon {
+    font-family: 'FontAwesome';
+}
+
+.social-icons {
+    font-family: 'FontAwesome';
+} */

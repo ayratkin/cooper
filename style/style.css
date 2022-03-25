@@ -1,13 +1,19 @@
+@font-face {
+  font-family: "CanterBold";
+  src: url("../fonts/CanterBold.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
   display: flex;
   align-items: center;
   background: url(../img/cooper_1.jpg);
-  color: #f3efe3; }
+  color: #f3efe3;
+  font-family: "CanterBold"; }
 
 .content {
   min-width: 1167px;
   box-sizing: border-box;
-  height: 1700px;
+  height: auto;
   margin: 0 auto;
   margin-top: 100px;
   background: url(../img/cooperr.png) no-repeat;
@@ -150,6 +156,7 @@ body {
   margin-top: 96px; }
 
 .contact-form__submit-btn {
+  font-family: "CanterBold";
   margin-left: 180px;
   margin-top: 179px;
   border: none;
@@ -157,5 +164,57 @@ body {
   font-size: 30px;
   background: transparent;
   color: #515253; }
+
+footer {
+  z-index: 100;
+  color: black;
+  display: flex;
+  flex-direction: column; }
+
+.address {
+  margin-top: 40px;
+  justify-content: center; }
+
+.address__text {
+  font-size: 16px;
+  font-family: "Georgia";
+  color: #32363a;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+  text-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.004); }
+
+.address__icon {
+  font-size: 24px;
+  font-family: "FontAwesome";
+  color: #313436;
+  line-height: 1;
+  text-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.004);
+  z-index: 90;
+  margin-right: 9px;
+  margin-top: 4px; }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+
+.social-icons ul {
+  display: flex;
+  flex-direction: row;
+  z-index: 200;
+  color: black; }
+  .social-icons ul li {
+    font-size: 60px;
+    font-family: "FontAwesome";
+    color: #313435;
+    line-height: 0.4;
+    -moz-transform: matrix(0.7006806434, 0, 0, 0.6998067724, 0, 0);
+    -webkit-transform: matrix(0.7006806434, 0, 0, 0.6998067724, 0, 0);
+    -ms-transform: matrix(0.7006806434, 0, 0, 0.6998067724, 0, 0);
+    width: 52.76px;
+    height: 42.852px;
+    z-index: 85;
+    margin: 0 22px; }
 
 /*# sourceMappingURL=style.css.map */
