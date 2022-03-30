@@ -9,19 +9,20 @@
     src: url('../fonts/fontawesome.ttf')
 
 body
+    min-width: 1167px
     display: flex
     align-items: center
     background: url(../img/cooper_1.jpg)
-    color: #f3efe3
+    color: #f3e3e3
     font-family: 'CanterBold'
 
 .content
+    margin: 0 auto
     min-width: 1167px
     box-sizing: border-box
-    height: auto
-    margin: 0 auto
+    height: 4000px
     margin-top: 100px
-    background: url(../img/cooperr.png) no-repeat
+    background: url(../img/cooperr.png) no-repeat, url(../img/bc_dublicate.png) repeat
     box-shadow: 0px 0px 25px 10px #2e2e2e
 
 
@@ -231,4 +232,46 @@ footer
         width: 52.76px
         height: 42.852px
         z-index: 85
-        margin: 0 22px
+        margin: 0 22px 
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) 
+
+    .join-section__container
+        flex-direction: column
+        align-items: center
+        width: 100%
+    
+    .map
+        margin: 0px
+        width: 938px
+        height: 518px
+
+    .address__icon
+        margin-left: 17.16px
+
+    .contact-form
+        margin: 60px 0 0 0
+        width: 938px
+        height: 518px
+
+    .address__icon
+        font-size: 30px
+
+    .address__text
+        font-size: 30px
+
+    .social-icons ul
+        margin-left: -59px
+    
+        li
+            font-size: 150px
+            margin: 0 100px
+
+@media (max-width: 480px)
+        .contact-form
+            margin: 80px 0 0 0
+
+
+
